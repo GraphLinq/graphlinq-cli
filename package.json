@@ -1,0 +1,54 @@
+{
+  "name": "@graphlinq/graphlinq-cli",
+  "version": "0.0.1",
+  "description": "simple CLI for graphlinq node",
+  "main": "index.js",
+  "bin": {
+    "graphlinq": "./bin/graphlinq"
+  },
+  "scripts": {
+    "test": "./node_modules/nyc/bin/nyc.js --reporter=lcov --reporter=text-summary ./node_modules/mocha/bin/mocha",
+    "test-silent": "./node_modules/nyc/bin/nyc.js --silent ./node_modules/mocha/bin/mocha",
+    "coverage": "./node_modules/nyc/bin/nyc.js --reporter=text ./node_modules/mocha/bin/mocha",
+    "publish": "npm publish --access public"
+  },
+  "repository": "https://github.com/GraphLinq/graphlinq-cli.git",
+  "keywords": [
+    "graphlinq",
+    "graphlinq-cli",
+    "cli"
+  ],
+  "author": "Graphlinq <info@graphlinq.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@ethersproject/json-wallets": "^5.8.0",
+    "connect-livereload": "^0.6.1",
+    "decimal.js": "^10.5.0",
+    "del": "^6.0.0",
+    "dockerode": "^4.0.7",
+    "ethers": "^6.13.4",
+    "express": "^4.17.1",
+    "fs-extra": "^11.3.0",
+    "JSONStream": "^1.3.5",
+    "livereload": "^0.9.1",
+    "node-ssh": "^13.2.1",
+    "open": "^7.3.0",
+    "ora": "^5.1.0",
+    "readline-sync": "^1.4.10",
+    "tar": "^7.4.3",
+    "yaml": "^2.7.1",
+    "yargs-parser": "~18",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "tap": "^14.10.8"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "lib"
+  ]
+}
